@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+/* ## Colors
+### Primary */
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+/* ### Accent */
+--Blue: hsl(248, 32%, 49%);
+/* ### Neutral */
+--Dark-Blue: hsl(249, 10%, 26%);
+--Grayish-Blue: hsl(246, 25%, 77%);
+--shadow-and-border: hsla(0, 0%, 0%, 0.15);
+}
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+body {
+    width: 375px;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Poppins";
+    background-color: var(--Dark-Blue);
+    font-size: 16px;
+}   
+.wrapper{
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    padding: 1.5rem;
+    text-align: center;
+}
+.introtext h1 {
+    padding: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 28px;
+}
+.offerinfo {
+    background-color: var(--Blue);
+    border-radius: 10px;
+    width:100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 0 0 var(--shadow-and-border);
+}
+.offerinfo p{
+    width: 70%;
+    font-weight: 300;
+}
+.offerinfo a{
+    font-weight: 600;
+}
+.formtext {
+    padding-top: 4rem;
+}
+.form {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 0 0 var(--shadow-and-border); 
+}
+.inputfields {
+    padding: 0.7rem;
+}
+.inputfields input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: solid 1px var(--shadow-and-border);
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+    font-family: inherit;
+    font-weight: 700;
+}
+.claimtrial {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    background-color: var(--Green);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 0 1px hsl(154, 57%, 43%);
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: inherit;
+}
+.claimtrial:hover {
+    background-color: hsl(152, 76%, 3%);
+    cursor: pointer;
+}
+.termsandservices {
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+    padding: 0 1.4rem 0.5rem 1.4rem;
+}
+.termsandservices a{
+    color: var(--Red);
+    font-weight: 700;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 2rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.warnimg {
+    position:relative;
+    top: 2.5rem;
+    right: -6rem;
+    display: none;
+}
+.warntext{
+    width: 100%;
+    text-align: right;
+    color: var(--Red);
+    font-size: 9px;
+    font-family: inherit;
+    font-weight: 400;
+    font-style: italic;
+    display: none;
+    
+}
+
+@media (min-width: 1000px) {
+    body {
+        min-width: 1000px;
+        margin-top: 5rem;
+    }   
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+    }
+    .introtext {
+        padding: 0 2rem 0 0;
+        text-align: left;
+    }
+    .introtext h1 {
+        padding: 0 0 1rem;
+    }
+    .offerinfo {
+        margin-bottom: 1.5rem;
+    }
+    .offerinfo p{
+        width: 100%;
+    }
+    .formtext{
+        min-width: 500px;
+    }
+    .warnimg {
+        top: 2.5rem;
+        right: -11rem;
+    }
+}
